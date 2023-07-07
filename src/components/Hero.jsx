@@ -33,12 +33,7 @@ export function Hero() {
                 this method a lot sooner.”
               </p>
             </blockquote>
-            <figcaption className="mt-2 text-sm text-slate-500">
-              <strong className="font-semibold text-blue-600 before:content-['—_']">
-                Stacey Solomon
-              </strong>
-              , Founder at Retail Park
-            </figcaption>
+        
           </figure>
         </div>
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
