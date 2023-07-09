@@ -3,19 +3,9 @@ import { Popover } from '@headlessui/react'
 import clsx from 'clsx'
 
 const sections = [
-  {
-    id: 'table-of-contents',
-    title: (
-      <>
-        <span className="hidden lg:inline">Table of contents</span>
-        <span className="lg:hidden">Contents</span>
-      </>
-    ),
-  },
-  { id: 'screencasts', title: 'Screencasts' },
-  { id: 'resources', title: 'Resources' },
-  { id: 'pricing', title: 'Pricing' },
-  { id: 'author', title: 'Author' },
+  { id: 'rrethproduktit', title: 'Rreth Produktit' },
+  { id: 'perdorimi', title: 'Si ta përdorim' },
+  { id: 'shporta', title: 'Shporta e blerjes' },
 ]
 
 export function NavBar() {
@@ -28,22 +18,10 @@ export function NavBar() {
       let elements = sections.map(({ id }) => document.getElementById(id))
       let bodyRect = document.body.getBoundingClientRect()
       let offset = bodyRect.top + navBarRef.current.offsetHeight + 1
-
-      if (window.scrollY >= Math.floor(bodyRect.height) - window.innerHeight) {
-        setActiveIndex(sections.length - 1)
-        return
+      if (typeof window === 'undefined' || typeof window.scrollY === 'undefined') {
+        return; // Skip execution if window or scrollY is not defined
       }
-
-      for (let index = 0; index < elements.length; index++) {
-        if (
-          window.scrollY >=
-          elements[index].getBoundingClientRect().top - offset
-        ) {
-          newActiveIndex = index
-        } else {
-          break
-        }
-      }
+ 
 
       setActiveIndex(newActiveIndex)
     }
@@ -74,7 +52,7 @@ export function NavBar() {
                 <>
                   <span
                     aria-hidden="true"
-                    className="font-mono text-sm text-blue-600"
+                    className="font-mono text-sm text-green-600"
                   >
                     {(Math.max(0, activeIndex) + 1).toString().padStart(2, '0')}
                   </span>
@@ -90,7 +68,7 @@ export function NavBar() {
                 )}
               >
                 {!open && <span className="absolute inset-0" />}
-                <span className="sr-only">Toggle navigation menu</span>
+                <span className="sr-only">navigimi</span>
                 <svg
                   aria-hidden="true"
                   className="h-6 w-6 stroke-slate-700"
@@ -120,7 +98,7 @@ export function NavBar() {
                   >
                     <span
                       aria-hidden="true"
-                      className="font-mono text-sm text-blue-600"
+                      className="font-mono text-sm text-green-600"
                     >
                       {(index + 1).toString().padStart(2, '0')}
                     </span>
@@ -144,9 +122,9 @@ export function NavBar() {
                 className={clsx(
                   'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]',
                   {
-                    'border-blue-600 bg-blue-50 text-blue-600 before:text-blue-600':
+                    'border-green-600 bg-green-50 text-green-600 before:text-green-600':
                       index === activeIndex,
-                    'border-transparent before:text-slate-500 hover:bg-blue-50/40 hover:before:text-slate-900':
+                    'border-transparent before:text-slate-500 hover:bg-green-50/40 hover:before:text-slate-900':
                       index !== activeIndex,
                   }
                 )}

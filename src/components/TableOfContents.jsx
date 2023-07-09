@@ -22,11 +22,6 @@ const tableOfContents = {
     'Intersecting shapes': 66,
     Flattening: 78,
   },
-  'Optimizing for production': {
-    'Preparing for SVG': 82,
-    'Configuring your export settings': 88,
-    'Minifying and removing metadata': 95,
-  },
 }
 
 export function TableOfContents() {
@@ -40,16 +35,13 @@ export function TableOfContents() {
     >
       <Container>
         <SectionHeading number="1" id="table-of-contents-title">
-          Table of contents
+          About
         </SectionHeading>
         <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Get a look at all of the content covered in the book. Everything you
-          need to know is inside.
+        Original Natural Ingredients
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          “Everything Starts as a Square” is comprised of 240 tightly edited,
-          highly visual pages designed to teach you everything you need to know
-          about icon design with no unnecessary filler.
+          Madox Tea drink contains plant extracts, one of which is Glucomannan, which helps satiate the stomach and curbs appetite. We can also mention Morosil, which melts the fat accumulated for years in sensitive areas.
         </p>
         <ol className="mt-16 space-y-10 sm:space-y-16">
           {Object.entries(tableOfContents)

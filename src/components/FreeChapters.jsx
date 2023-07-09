@@ -1,17 +1,19 @@
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
+import Image from 'next/image'
+import threeImage from '@/images/content.jpg'
+
+
 
 export function FreeChapters() {
   return (
     <section
-      id="free-chapters"
+      id="perdorimi"
       aria-labelledby="free-chapters-title"
-      className="scroll-mt-14 bg-blue-600 sm:scroll-mt-32"
+      className="scroll-mt-14 bg-green-600 sm:scroll-mt-32"
     >
-      <h2 id="free-chapters-title" className="sr-only">
-        Free preview
-      </h2>
+      
       <div className="overflow-hidden lg:relative">
         <Container
           size="md"
@@ -20,41 +22,13 @@ export function FreeChapters() {
           <Pattern className="absolute -top-32 left-0 w-full sm:left-3/4 sm:-top-5 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:right-auto xl:left-2/3" />
           <div>
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
-              Get the free sample chapters
-            </h2>
-            <p className="mt-4 text-lg tracking-tight text-blue-200">
-              Enter your email address and I’ll send you a sample from the book
-              containing two of my favorite chapters.
+            Përbërësit origjinalë natyralë            </h2>
+            <p className="mt-4 text-lg tracking-tight text-green-200">
+            Çaji Madoxtea përmban ekstrakte bimore, një prej të cilave është Glucomannan, i cili ndihmon në ngopjen e stomakut dhe frenon oreksin. Mund të përmendim edhe Morosil, i cili shkrin yndyrën e grumbulluar prej vitesh në zonat e ndjeshme.
             </p>
           </div>
-          <form className="lg:pl-16">
-            <h3 className="text-base font-medium tracking-tight text-white">
-              Get two free chapters straight to your inbox &rarr;
-            </h3>
-            <div className="mt-4 sm:relative sm:flex sm:items-center sm:py-0.5 sm:pr-2.5">
-              <div className="relative sm:static sm:flex-auto">
-                <label htmlFor="email-address" className="sr-only">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  id="email-address"
-                  required
-                  placeholder="Email address"
-                  className="peer relative z-10 w-full appearance-none bg-transparent px-4 py-2 text-base text-white placeholder:text-white/70 focus:outline-none sm:py-3"
-                />
-                <div className="absolute inset-0 rounded-md border border-white/20 peer-focus:border-blue-300 peer-focus:bg-blue-500 peer-focus:ring-1 peer-focus:ring-blue-300 sm:rounded-xl" />
-              </div>
-              <Button
-                type="submit"
-                color="white"
-                className="mt-4 w-full sm:relative sm:z-10 sm:mt-0 sm:w-auto sm:flex-none"
-              >
-                Get free chapters
-              </Button>
-            </div>
-          </form>
-        </Container>
+          <Image src={threeImage} alt="" />
+          </Container>
       </div>
     </section>
   )

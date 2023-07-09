@@ -39,7 +39,7 @@ export function Introduction() {
             <li key={feature} className="flex">
               <svg
                 aria-hidden="true"
-                className="h-8 w-8 flex-none fill-blue-500"
+                className="h-8 w-8 flex-none fill-green-500"
               >
                 <path d="M11.83 15.795a1 1 0 0 0-1.66 1.114l1.66-1.114Zm9.861-4.072a1 1 0 1 0-1.382-1.446l1.382 1.446ZM14.115 21l-.83.557a1 1 0 0 0 1.784-.258L14.115 21Zm.954.3c1.29-4.11 3.539-6.63 6.622-9.577l-1.382-1.446c-3.152 3.013-5.704 5.82-7.148 10.424l1.908.598Zm-4.9-4.391 3.115 4.648 1.661-1.114-3.114-4.648-1.662 1.114Z" />
               </svg>
@@ -55,7 +55,7 @@ export function Introduction() {
         <p className="mt-10">
           <a
             href="#free-chapters"
-            className="text-base font-medium tracking-tight text-blue-600 hover:text-blue-800"
+            className="text-base font-medium tracking-tight text-green-600 hover:text-green-800"
           >
             Get two free chapters straight to your inbox &rarr;
           </a>

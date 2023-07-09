@@ -2,105 +2,60 @@ import Image from 'next/image'
 
 import { Container } from '@/components/Container'
 import { SectionHeading } from '@/components/SectionHeading'
-import duotoneImage from '@/images/screencasts/duotone.svg'
-import gridsImage from '@/images/screencasts/grids.svg'
-import setupImage from '@/images/screencasts/setup.svg'
-import strokesImage from '@/images/screencasts/strokes.svg'
+import oneImage from '@/images/screencasts/1.jpg'
+import twoImage from '@/images/screencasts/2.jpg'
+import threeImage from '@/images/screencasts/3.jpg'
+import fourImage from '@/images/screencasts/4.jpg'
+import fiveImage from '@/images/screencasts/5.jpg'
+import sixImage from '@/images/screencasts/6.jpg'
 
 const videos = [
   {
-    title: 'Getting started with Figma',
-    description:
-      'Get familiar with the Figma UI, the different tools it offers, and the most important features.',
-    image: setupImage,
-    runtime: { minutes: 16, seconds: 54 },
+    image: oneImage,
   },
   {
-    title: 'Setting up your artboard',
-    description:
-      'Learn how to create a new artboard and configure your grid and rulers for designing icons.',
-    image: gridsImage,
-    runtime: { minutes: 9, seconds: 12 },
+    image: twoImage,
   },
   {
-    title: 'Designing your first icon',
-    description:
-      'Using basic shapes and boolean operations, learn how to design your own notification icon from scratch.',
-    image: strokesImage,
-    runtime: { minutes: 23, seconds: 25 },
+    image: threeImage,
   },
   {
-    title: 'Advanced design techniques',
-    description:
-      'Learn the techniques you need to know to adapt your original icon to a modern duotone style.',
-    image: duotoneImage,
-    runtime: { minutes: 28, seconds: 44 },
+    image: fourImage,
+  },
+  {
+    image: fiveImage,
+  },
+  {
+    image: sixImage,
   },
 ]
 
 export function Screencasts() {
   return (
     <section
-      id="screencasts"
+      id="rrethproduktit"
       aria-labelledby="screencasts-title"
       className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
     >
       <Container>
-        <SectionHeading number="2" id="screencasts-title">
-          Screencasts
+        <SectionHeading number="1" id="screencasts-title">
+          Detaje
         </SectionHeading>
-        <p className="mt-8 font-display text-4xl font-bold tracking-tight text-slate-900">
-          Over an hour of high quality, step-by-step video content to sharpen
-          your icon design workflow.
+        <p className="mt-8 font-display text-2xl font-bold tracking-tight text-slate-900">
+        Produced and packaged in Switzerland, the Madoxtea drink contains plant extracts, one of which is Glucomannan, which helps satiate the stomach and curbs appetite. We can also mention Morosil, which melts the fat accumulated for years in sensitive areas. It is also well known for the efficiency of fat melting in the abdominal area (stomach). We have also proven this fact with real results for our clients.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Learn how to design your very first icons in a series of screencasts
-          that will teach you everything you need to know to go from beginner to
-          pro in just over an hour.
+        The content of the drink is completed by many other extracts, carefully selected, useful for everyone's immunity. The drink is used by both sexes from the age of 16. While using the drink, we recommend a healthy diet that will keep you in the habit even after finishing with Madoxtea.
         </p>
       </Container>
       <Container size="lg" className="mt-16">
-        <ol className="grid grid-cols-1 gap-y-10 gap-x-8 [counter-reset:video] sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-2">
           {videos.map((video) => (
-            <li key={video.title} className="[counter-increment:video]">
-              <div
-                className="relative flex h-44 items-center justify-center rounded-2xl px-6 shadow-lg"
-                style={{
-                  backgroundImage:
-                    'conic-gradient(from -49.8deg at 50% 50%, #7331FF 0deg, #00A3FF 59.07deg, #4E51FF 185.61deg, #39DBFF 284.23deg, #B84FF1 329.41deg, #7331FF 360deg)',
-                }}
-              >
                 <div className="flex overflow-hidden rounded shadow-sm">
                   <Image src={video.image} alt="" />
                 </div>
-                <div className="absolute bottom-2 left-2 flex items-center rounded-lg bg-black/30 px-1.5 py-0.5 text-sm text-white [@supports(backdrop-filter:blur(0))]:bg-white/10 [@supports(backdrop-filter:blur(0))]:backdrop-blur">
-                  <svg
-                    aria-hidden="true"
-                    className="h-4 w-4 fill-current stroke-current"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M6.75 10.25v-4.5L10.25 8l-3.5 2.25Z" />
-                    <circle cx="8" cy="8" r="6.25" fill="none" />
-                  </svg>
-                  <time
-                    dateTime={`${video.runtime.minutes}m ${video.runtime.seconds}s`}
-                    className="ml-2"
-                  >
-                    {`${video.runtime.minutes}:${video.runtime.seconds
-                      .toString()
-                      .padStart(2, '0')}`}
-                  </time>
-                </div>
-              </div>
-              <h3 className="mt-8 text-base font-medium tracking-tight text-slate-900 before:mb-2 before:block before:font-mono before:text-sm before:text-slate-500 before:content-[counter(video,decimal-leading-zero)]">
-                {video.title}
-              </h3>
-              <p className="mt-2 text-sm text-slate-600">{video.description}</p>
-            </li>
           ))}
-        </ol>
+        </div>
       </Container>
     </section>
   )
