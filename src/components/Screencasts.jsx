@@ -45,18 +45,19 @@ export function Screencasts() {
         Produced and packaged in Switzerland, the Madoxtea drink contains plant extracts, one of which is Glucomannan, which helps satiate the stomach and curbs appetite. We can also mention Morosil, which melts the fat accumulated for years in sensitive areas. It is also well known for the efficiency of fat melting in the abdominal area (stomach). We have also proven this fact with real results for our clients.
         </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-        The content of the drink is completed by many other extracts, carefully selected, useful for everyone's immunity. The drink is used by both sexes from the age of 16. While using the drink, we recommend a healthy diet that will keep you in the habit even after finishing with Madoxtea.
+        The content of the drink is completed by many other extracts, carefully selected, useful for everyone&apos;s immunity. The drink is used by both sexes from the age of 16. While using the drink, we recommend a healthy diet that will keep you in the habit even after finishing with Madoxtea.
         </p>
       </Container>
       <Container size="lg" className="mt-16">
-        <div className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-2">
-          {videos.map((video) => (
-                <div className="flex overflow-hidden rounded shadow-sm">
-                  <Image src={video.image} alt="" />
-                </div>
-          ))}
-        </div>
-      </Container>
+  <div className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-2">
+    {videos.map((video, index) => (
+      <div className="flex overflow-hidden rounded shadow-sm" key={index}>
+        <Image src={video.image} alt="" />
+      </div>
+    ))}
+  </div>
+</Container>
+
     </section>
   )
 }
