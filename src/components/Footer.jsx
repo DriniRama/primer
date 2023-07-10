@@ -7,6 +7,7 @@ export function Footer() {
         <GridPattern x="50%" />
       </div>
       <div className="relative text-center text-sm text-slate-600">
+        <p><a href="https://instagram.com/madoxtea">Instagram</a></p>
         <p>Copyright &copy; {new Date().getFullYear()} Madox Tea</p>
         <p>Te gjitha te drejtat e rezervuara.</p>
       </div>
