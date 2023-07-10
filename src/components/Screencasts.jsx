@@ -39,7 +39,7 @@ export function Screencasts() {
         <p className="mt-8 font-display text-2xl font-bold tracking-tight text-slate-900">
         E prodhuar dhe e paketuar në Zvicër, pija Madoxtea përmban ekstrakte bimore, një prej të cilave është Glucomannan, i cili ndihmon në ngopjen e stomakut dhe frenon oreksin. Mund të përmendim edhe Morosil, i cili shkrin yndyrën e grumbulluar prej vitesh në zonat e ndjeshme. Është gjithashtu i njohur për efikasitetin e shkrirjes së yndyrës në zonën e barkut (stomak). Këtë fakt e kemi vërtetuar edhe me rezultate reale për klientët tanë.        </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-        Përmbajtja e pijes plotësohet nga shumë ekstrakte të tjera, të zgjedhura me kujdes, të dobishme për imunitetin e të gjithëve. Pija përdoret nga të dyja gjinitë që nga mosha 16 vjeçare. Gjatë përdorimit të pijes ju rekomandojmë një dietë të shëndetshme që do t'ju mbajë në zakon edhe pasi të keni mbaruar me Madoxtea.        </p>
+        Përmbajtja e pijes plotësohet nga shumë ekstrakte të tjera, të zgjedhura me kujdes, të dobishme për imunitetin e të gjithëve. Pija përdoret nga të dyja gjinitë që nga mosha 16 vjeçare. Gjatë përdorimit të pijes ju rekomandojmë një dietë të shëndetshme që do t&apos;ju mbajë në zakon edhe pasi të keni mbaruar me Madoxtea.        </p>
       </Container>
       <Container size="lg" className="mt-16">
   <div className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-2">
