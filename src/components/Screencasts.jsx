@@ -13,12 +13,7 @@ const videos = [
   {
     image: oneImage,
   },
-  {
-    image: twoImage,
-  },
-  {
-    image: threeImage,
-  },
+
   {
     image: fourImage,
   },
@@ -42,11 +37,9 @@ export function Screencasts() {
           Detaje
         </SectionHeading>
         <p className="mt-8 font-display text-2xl font-bold tracking-tight text-slate-900">
-        Produced and packaged in Switzerland, the Madoxtea drink contains plant extracts, one of which is Glucomannan, which helps satiate the stomach and curbs appetite. We can also mention Morosil, which melts the fat accumulated for years in sensitive areas. It is also well known for the efficiency of fat melting in the abdominal area (stomach). We have also proven this fact with real results for our clients.
-        </p>
+        E prodhuar dhe e paketuar në Zvicër, pija Madoxtea përmban ekstrakte bimore, një prej të cilave është Glucomannan, i cili ndihmon në ngopjen e stomakut dhe frenon oreksin. Mund të përmendim edhe Morosil, i cili shkrin yndyrën e grumbulluar prej vitesh në zonat e ndjeshme. Është gjithashtu i njohur për efikasitetin e shkrirjes së yndyrës në zonën e barkut (stomak). Këtë fakt e kemi vërtetuar edhe me rezultate reale për klientët tanë.        </p>
         <p className="mt-4 text-lg tracking-tight text-slate-700">
-        The content of the drink is completed by many other extracts, carefully selected, useful for everyone&apos;s immunity. The drink is used by both sexes from the age of 16. While using the drink, we recommend a healthy diet that will keep you in the habit even after finishing with Madoxtea.
-        </p>
+        Përmbajtja e pijes plotësohet nga shumë ekstrakte të tjera, të zgjedhura me kujdes, të dobishme për imunitetin e të gjithëve. Pija përdoret nga të dyja gjinitë që nga mosha 16 vjeçare. Gjatë përdorimit të pijes ju rekomandojmë një dietë të shëndetshme që do t'ju mbajë në zakon edhe pasi të keni mbaruar me Madoxtea.        </p>
       </Container>
       <Container size="lg" className="mt-16">
   <div className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-2">

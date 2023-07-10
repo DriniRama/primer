@@ -2,7 +2,7 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
 import Image from 'next/image'
-import threeImage from '@/images/content.jpg'
+import threeImage from '@/images/screencasts/2.jpg'
 
 
 

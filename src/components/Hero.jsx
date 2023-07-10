@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { ButtonLink } from '@/components/Button'
 import { GridPattern } from '@/components/GridPattern'
 import { StarRating } from '@/components/StarRating'
-import coverImage from '@/images/cover.jpg'
+import coverImage from '@/images/screencasts/3.jpg'
 
 export function Hero() {
   return (
