@@ -53,7 +53,7 @@ Perzgjidhni detajet per porosine tuaj        </p>
       <div className="isolate grid grid-cols-1 pb-10 px-6 sm:py-10 lg:px-8">
     <div className="w-full max-w-screen-lg mx-auto">
 
-      <form action="https://formspree.io/f/xvojoqpw" method="POST" className="mx-auto mt-6 max-w-xl sm:mt-6">
+      <form action="https://formspree.io/f/mwkdlkak" method="POST" className="mx-auto mt-6 max-w-xl sm:mt-6">
         <div className="grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2">
         <div className="sm:col-span-2">
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-700">
