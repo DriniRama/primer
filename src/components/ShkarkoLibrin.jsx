@@ -1,7 +1,7 @@
-import { ButtonLink } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { SectionHeading } from '@/components/SectionHeading'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { ButtonLink } from '@/components/Button';
+import { Container } from '@/components/Container';
+import { SectionHeading } from '@/components/SectionHeading';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { useState, useEffect } from 'react';
 
 const handleDownload = () => {
@@ -14,18 +14,22 @@ const handleDownload = () => {
 };
 
 export function ShkarkoLibrin() {
-  const [isFormValid, setIsFormValid] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     country: '+383', // Default country code
     phoneNumber: '',
     email: ''
   });
+  const [formErrors, setFormErrors] = useState({
+    email: ''
+  });
+  const [isFormValid, setIsFormValid] = useState(false);
 
   useEffect(() => {
     const { firstName, phoneNumber, email } = formData;
-    setIsFormValid(firstName && phoneNumber && email);
-  }, [formData]);
+    const isValidEmail = validateEmail(email);
+    setIsFormValid(firstName && phoneNumber && isValidEmail && !formErrors.email);
+  }, [formData, formErrors]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -33,6 +37,14 @@ export function ShkarkoLibrin() {
       ...prevState,
       [name]: value
     }));
+    if (name === 'email') {
+      const errorMessage = validateEmail(value) ? '' : 'Please enter a valid email address';
+      setFormErrors({ ...formErrors, email: errorMessage });
+    }
+  };
+
+  const validateEmail = (email) => {
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
   };
 
   return (
@@ -42,7 +54,7 @@ export function ShkarkoLibrin() {
       className="scroll-mt-14 pt-6 sm:scroll-mt-32"
     >
       <Container>
-        <SectionHeading number="4">Libri</SectionHeading>
+        <SectionHeading number="4" id="shkarko-librin">Libri</SectionHeading>
         <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
           Shkarko guidën e personalizuar për humbjen e peshës
         </p>
@@ -55,7 +67,7 @@ export function ShkarkoLibrin() {
                 Konfirmoni detajet dhe shkarkoni dokumentin
               </p>
               <ButtonLink
-                href="#firstNamee"
+                href="#libri"
                 color="white"
                 className="mt-8"
                 aria-label="Get started with the Icon Pro plan for $229"
@@ -70,6 +82,7 @@ export function ShkarkoLibrin() {
         <div className="w-full max-w-screen-lg mx-auto">
           <form
             action="https://formspree.io/f/mwkdlkak"
+            id='shkarko-librin'
             method="POST"
             className="mx-auto mt-6 max-w-xl sm:mt-6"
             onSubmit={(e) => {
@@ -102,7 +115,7 @@ export function ShkarkoLibrin() {
                 <input
                   type="text"
                   name="firstName"
-                  id="firstNamee"
+                  id="firstName"
                   autoComplete="given-name"
                   required
                   className="mt-2.5 block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6"
@@ -151,10 +164,11 @@ export function ShkarkoLibrin() {
                   name="email"
                   id="email"
                   required
-                  className="mt-2.5 block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6"
+                  className={`mt-2.5 block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6 ${formErrors.email ? 'ring-2 ring-red-500' : ''}`}
                   onChange={handleChange}
                   value={formData.email}
                 />
+                {formErrors.email && <p className="text-red-500 text-xs italic">{formErrors.email}</p>}
               </div>
             </div>
             <div className="mt-10">
