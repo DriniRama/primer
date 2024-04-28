@@ -66,14 +66,6 @@ export function ShkarkoLibrin() {
               <p className="mt-2 text-lg tracking-tight text-white">
                 Konfirmoni detajet dhe shkarkoni dokumentin
               </p>
-              <ButtonLink
-                href="#libri"
-                color="white"
-                className="mt-8"
-                aria-label="Get started with the Icon Pro plan for $229"
-              >
-                Shkarko librin 📖
-              </ButtonLink>
             </div>
           </div>
         </div>
@@ -177,7 +169,7 @@ export function ShkarkoLibrin() {
                 disabled={!isFormValid}
                 className={`block w-full rounded-md bg-emerald-600 px-3.5 py-2.5 text-center text-sm font-semibold text-gray-100 shadow-sm ${!isFormValid ? 'opacity-50 cursor-not-allowed' : 'hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600'}`}
               >
-                Konfirmo
+                Shkarko librin 📖
               </button>
             </div>
           </form>
