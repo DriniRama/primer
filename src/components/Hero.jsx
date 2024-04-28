@@ -42,8 +42,11 @@ Përbërës 100% natyral      </h1>
             <p className="mt-4 text-3xl text-zinc-700">
             Produkti i prodhuar dhe paketuar në Zvicërr, një pije natyrale dhe e shëndetshme për humbjen e peshës.            </p>
             <div className="mt-8 mb-10 flex">
-              <ButtonLink href="#shporta" variant="outline" color="green">
+              <ButtonLink className="mx-5" href="#shporta" variant="outline" color="green">
                 Porosit online
+              </ButtonLink>
+               <ButtonLink href="#shkarkolibrin" variant="outline" color="green">
+                Shkarko Librin
               </ButtonLink>
             </div>
           </div>

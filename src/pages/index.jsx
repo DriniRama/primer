@@ -5,6 +5,7 @@ import { FreeChapters } from '@/components/FreeChapters'
 import { Hero } from '@/components/Hero'
 import { NavBar } from '@/components/NavBar'
 import { Pricing } from '@/components/Pricing'
+import { ShkarkoLibrin } from '@/components/ShkarkoLibrin'
 import { Screencasts } from '@/components/Screencasts'
 
 
@@ -25,6 +26,7 @@ Madox Tea
       <Screencasts />
       <FreeChapters />
       <Pricing />
+      <ShkarkoLibrin />
       <Footer />
     </>
   )
