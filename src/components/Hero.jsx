@@ -32,20 +32,20 @@ export function Hero() {
                 “Një çaj i jashtëzakonshëm që mban me lehtësi shijen e këndshme me përfitimet e tij të fuqishme për humbjen e peshës, duke ofruar një mënyrë të freskët dhe efektive për të arritur qëllimet e mia të shëndetit.”
               </p>
             </blockquote>
-        
+
           </figure>
         </div>
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-emerald-900 sm:text-6xl">
-Përbërës 100% natyral      </h1>
+              Përbërës 100% natyral      </h1>
             <p className="mt-4 text-3xl text-zinc-700">
-            Produkti i prodhuar dhe paketuar në Zvicërr, një pije natyrale dhe e shëndetshme për humbjen e peshës.            </p>
+              Produkti i prodhuar dhe paketuar në Zvicërr, një pije natyrale dhe e shëndetshme për humbjen e peshës.            </p>
             <div className="mt-8 mb-10 flex">
               <ButtonLink className="mx-5" href="#shporta" variant="outline" color="green">
                 Porosit online
               </ButtonLink>
-               <ButtonLink href="#shkarkolibrin" variant="outline" color="green">
+              <ButtonLink href="#shkarkolibrin" variant="outline" color="green">
                 Shkarko Librin
               </ButtonLink>
             </div>

@@ -6,7 +6,7 @@ const sections = [
   { id: 'rrethproduktit', title: 'Rreth Produktit' },
   { id: 'perdorimi', title: 'Si ta përdorim' },
   { id: 'shporta', title: 'Shporta e blerjes' },
-  { id: 'libri', title: 'Libri per humbje peshe' },
+  { id: 'shkarkolibrin', title: 'Libri per humbje peshe' },
 ];
 
 export function NavBar() {
