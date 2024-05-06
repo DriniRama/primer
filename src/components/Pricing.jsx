@@ -82,6 +82,20 @@ Shteti                            </p>
             </div>
           </div>
 
+          <div className="sm:col-span-2">
+            <label htmlFor="city" className="block text-sm font-semibold leading-6 text-gray-700">
+            Qyteti juaj
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="text"
+                name="city"
+                id="city"
+                autoComplete="address-level2"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
 
           <div className="sm:col-span-2">
             <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-700">
@@ -114,8 +128,40 @@ Shteti                            </p>
             </div>
           </div>
           <div className="sm:col-span-2">
+            <label htmlFor="address" className="block text-sm font-semibold leading-6 text-gray-700">
+            Adresa juaj (Fshati, rruga, numri i shtepise)
+            </label>
+            <div className="mt-2.5">
+              <input
+                type="text"
+                name="address"
+                id="address"
+                autoComplete="street-address"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6"
+              />
+            </div>
+          </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="quantity" className="block text-sm font-semibold leading-6 text-gray-700">
+            Sa pako deshironi?
+            </label>
+            <div className="mt-2.5">
+              <select
+                name="quantity"
+                id="quantity"
+                className="block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:max-w-xs sm:text-sm sm:leading-6"
+              >
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div className="sm:col-span-2">
             <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-700">
-            Adresa e plote         </label>
+            Shenime shtese         </label>
             <p className="text-sm font-normal leading-5 text-gray-700">
 
 Transport falas ne Kosovë. <br /> Transporti në Shqipëri,Maqedoni 3€              </p>
