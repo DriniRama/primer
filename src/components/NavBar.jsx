@@ -3,7 +3,7 @@ import { Popover } from '@headlessui/react';
 import clsx from 'clsx';
 
 const sections = [
-  { id: 'rrethproduktit', title: 'Rreth Produktit' },
+  // { id: 'rrethproduktit', title: 'Rreth Produktit' },
   { id: 'perdorimi', title: 'A ka efekt dieta?' },
   { id: 'shporta', title: 'Shporta e blerjes' },
   { id: 'shkarkolibrin', title: 'Receta per humbje peshe' },
@@ -53,7 +53,7 @@ export function NavBar() {
             >
               {!open && activeIndex !== -1 && (
                 <>
-                  <span aria-hidden="true" className="font-mono text-sm text-green-600">
+                  <span aria-hidden="true" className="font-mono text-sm text-indigo-600">
                     {(activeIndex + 1).toString().padStart(2, '0')}
                   </span>
                   <span className="ml-4 text-base font-medium text-slate-900">
@@ -86,7 +86,7 @@ export function NavBar() {
                     close();
                   }}
                 >
-                  <span aria-hidden="true" className="font-mono text-sm text-green-600">
+                  <span aria-hidden="true" className="font-mono text-sm text-indigo-600">
                     {(index + 1).toString().padStart(2, '0')}
                   </span>
                   <span className="ml-4 text-base font-medium text-slate-900">
@@ -107,8 +107,8 @@ export function NavBar() {
                 className={clsx(
                   'flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]',
                   {
-                    'border-green-600 bg-green-50 text-green-600 before:text-green-600': index === activeIndex,
-                    'border-transparent before:text-slate-500 hover:bg-green-50/40 hover:before:text-slate-900': index !== activeIndex,
+                    'border-indigo-600 bg-indigo-50 text-indigo-600 before:text-indigo-600': index === activeIndex,
+                    'border-transparent before:text-slate-500 hover:bg-indigo-50/40 hover:before:text-slate-900': index !== activeIndex,
                   }
                 )}
                 onClick={() => setActiveIndex(index)}

@@ -23,7 +23,7 @@ Madox Tea
       </Head>
       <Hero />
       <NavBar />
-      <Screencasts />
+      {/*<Screencasts />*/}
       <FreeChapters />
       <Pricing />
       <ShkarkoLibrin />

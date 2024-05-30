@@ -64,7 +64,7 @@ export function ShkarkoLibrin() {
         <li className="mt-5 text-xl font-normal text-slate-800"> Çfarë ushqime të ndaloni</li>
       </Container>
       <div className="mx-auto mt-6 max-w-5xl lg:px-6">
-          <div className="relative flex items-center justify-center bg-green-600 py-16 px-4 sm:rounded-5xl sm:py-12 sm:px-10 sm:shadow-lg lg:px-12">
+          <div className="relative flex items-center justify-center bg-indigo-600 py-16 px-4 sm:rounded-5xl sm:py-12 sm:px-10 sm:shadow-lg lg:px-12">
             <div className="relative  flex-col">
               <p className="mt-2 text-4xl font-black uppercase tracking-tight text-white">
                Shkarko recetën FALAS
@@ -115,7 +115,7 @@ export function ShkarkoLibrin() {
                   id="firstName"
                   autoComplete="given-name"
                   required
-                  className="mt-2.5 block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6"
+                  className="mt-2.5 block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   onChange={handleChange}
                   value={formData.firstName}
                 />
@@ -128,7 +128,7 @@ export function ShkarkoLibrin() {
                   <select
                     id="country"
                     name="country"
-                    className="absolute inset-y-0 left-0 h-full rounded-md border-0 bg-transparent py-0 pl-4 pr-9 text-gray-600 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm"
+                    className="absolute inset-y-0 left-0 h-full rounded-md border-0 bg-transparent py-0 pl-4 pr-9 text-gray-600 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
                     onChange={handleChange}
                     value={formData.country}
                   >
@@ -146,7 +146,7 @@ export function ShkarkoLibrin() {
                     id="phone-number"
                     autoComplete="tel"
                     required
-                    className="block w-full rounded-md border-0 py-2 px-3.5 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-2 px-3.5 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                     onChange={handleChange}
                     value={formData.phoneNumber}
                   />
@@ -161,7 +161,7 @@ export function ShkarkoLibrin() {
                   name="email"
                   id="email"
                   required
-                  className={`mt-2.5 block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-600 sm:text-sm sm:leading-6 ${formErrors.email ? 'ring-2 ring-red-500' : ''}`}
+                  className={`mt-2.5 block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 ${formErrors.email ? 'ring-2 ring-red-500' : ''}`}
                   onChange={handleChange}
                   value={formData.email}
                 />
@@ -172,7 +172,7 @@ export function ShkarkoLibrin() {
               <button
                 type="submit"
                 disabled={!isFormValid}
-                className={`block w-full rounded-md bg-emerald-600 px-3.5 py-2.5 text-center text-sm font-semibold text-gray-100 shadow-sm ${!isFormValid ? 'opacity-50 cursor-not-allowed' : 'hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600'}`}
+                className={`block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-gray-100 shadow-sm ${!isFormValid ? 'opacity-50 cursor-not-allowed' : 'hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'}`}
               >
                 Shkarko librin 📖
               </button>

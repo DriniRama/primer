@@ -11,7 +11,7 @@ export function FreeChapters() {
     <section
       id="perdorimi"
       aria-labelledby="free-chapters-title"
-      className="scroll-mt-14 bg-green-600 sm:scroll-mt-32"
+      className="scroll-mt-14 bg-indigo-600 sm:scroll-mt-32"
     >
       
       <div className="overflow-hidden lg:relative">
@@ -23,7 +23,7 @@ export function FreeChapters() {
           <div>
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
             A ka me të vërtetë efekt dieta <b>Madox?</b>           </h2>
-            <p className="mt-4 text-lg tracking-tight text-green-200">
+            <p className="mt-4 text-lg tracking-tight text-indigo-200">
            Edhe pse dieta Madox është e njohur prej vitesh, ka pasur shumë dyshime në lidhje me efektivitetin e saj. Studimet e fundit konfirmojnë se receta është shumë e nevojshme dhe mjaft efektive në humbjen e shpejtë të peshës. Ndërsa recetat tipike të humbjes së peshës mund të ndihmojnë një person që të humb më së shumti 1-2 kilogram, receta e Madox mund të ju ndihmojë të humbni më shumë peshë brenda vetëm një jave!!! Deri në 8 kilogram.
             </p>
           </div>
