@@ -67,7 +67,7 @@ export function ShkarkoLibrin() {
           <div className="relative flex items-center justify-center bg-indigo-600 py-16 px-4 sm:rounded-5xl sm:py-12 sm:px-10 sm:shadow-lg lg:px-12">
             <div className="relative  flex-col">
               <p className="mt-2 text-4xl font-black uppercase tracking-tight text-white">
-               Shkarko recetën FALAS
+               Shkarko reçetën FALAS
               </p>
               <p className="mt-2 text-xl font-normal uppercase tracking-tight text-white">
                 duke plotësuar të dhënat më poshtë 👇

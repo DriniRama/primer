@@ -6,7 +6,7 @@ const sections = [
   // { id: 'rrethproduktit', title: 'Rreth Produktit' },
   { id: 'perdorimi', title: 'A ka efekt dieta?' },
   { id: 'shporta', title: 'Shporta e blerjes' },
-  { id: 'shkarkolibrin', title: 'Receta per humbje peshe' },
+  { id: 'shkarkolibrin', title: 'Reçeta per humbje peshe' },
 ];
 
 export function NavBar() {

@@ -17,7 +17,7 @@ export function Hero() {
               patternTransform="translate(112 64)"
             />
           </div>
-          <div className="relative z-10 mx-auto flex w-64 rounded-xl bg-indigo-900 shadow-xl md:w-80 lg:w-auto">
+          <div className="relative layout-fill z-10 mx-auto flex w-64 rounded-xl bg-indigo-900 shadow-xl md:w-80 lg:w-auto">
             <Image src={coverImage} alt="" priority />
           </div>
         </div>
@@ -40,7 +40,7 @@ export function Hero() {
             <h1 className="font-display text-5xl font-extrabold text-indigo-900 sm:text-6xl">
               Si të humbisni 5-8 kilogram për një javë?      </h1>
             <p className="mt-4 text-3xl text-zinc-700">
-              Shkarkoni recetën falas dhe mësoni se si të humbisni 5-8kg brenda javës. </p>
+              Shkarkoni reçetën falas dhe mësoni se si të humbisni 5-8kg brenda javës. </p>
             <div className="mt-10 mb-12 flex">
               <ButtonLink className="mx-5" href="#shporta" variant="outline" color="indigo">
                 Porosite produktin
