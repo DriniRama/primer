@@ -46,7 +46,7 @@ export function Hero() {
                 Porosite produktin
               </ButtonLink>
               <ButtonLink href="#shkarkolibrin" variant="outline" color="indigo">
-                Shkarko Recetën
+                Shkarko Reçetën
               </ButtonLink>
             </div>
           </div>
