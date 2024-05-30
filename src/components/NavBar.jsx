@@ -4,9 +4,9 @@ import clsx from 'clsx';
 
 const sections = [
   { id: 'rrethproduktit', title: 'Rreth Produktit' },
-  { id: 'perdorimi', title: 'Si ta përdorim' },
+  { id: 'perdorimi', title: 'A ka efekt dieta?' },
   { id: 'shporta', title: 'Shporta e blerjes' },
-  { id: 'shkarkolibrin', title: 'Libri per humbje peshe' },
+  { id: 'shkarkolibrin', title: 'Receta per humbje peshe' },
 ];
 
 export function NavBar() {

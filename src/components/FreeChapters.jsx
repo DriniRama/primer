@@ -1,4 +1,4 @@
-import { Button } from '@/components/Button'
+import {Button, ButtonLink} from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Pattern } from '@/components/Pattern'
 import Image from 'next/image'
@@ -22,14 +22,18 @@ export function FreeChapters() {
           <Pattern className="absolute -top-32 left-0 w-full sm:left-3/4 sm:-top-5 sm:ml-8 sm:w-auto md:left-2/3 lg:left-auto lg:right-2 lg:ml-0 xl:right-auto xl:left-2/3" />
           <div>
             <h2 className="font-display text-5xl font-extrabold tracking-tight text-white sm:w-3/4 sm:text-6xl md:w-2/3 lg:w-auto">
-            Përbërësit origjinalë natyralë            </h2>
+            A ka me të vërtetë efekt dieta <b>Madox?</b>           </h2>
             <p className="mt-4 text-lg tracking-tight text-green-200">
-            Çaji Madoxtea përmban ekstrakte bimore, një prej të cilave është Glucomannan, i cili ndihmon në ngopjen e stomakut dhe frenon oreksin. Mund të përmendim edhe Morosil, i cili shkrin yndyrën e grumbulluar prej vitesh në zonat e ndjeshme.
+           Edhe pse dieta Madox është e njohur prej vitesh, ka pasur shumë dyshime në lidhje me efektivitetin e saj. Studimet e fundit konfirmojnë se receta është shumë e nevojshme dhe mjaft efektive në humbjen e shpejtë të peshës. Ndërsa recetat tipike të humbjes së peshës mund të ndihmojnë një person që të humb më së shumti 1-2 kilogram, receta e Madox mund të ju ndihmojë të humbni më shumë peshë brenda vetëm një jave!!! Deri në 8 kilogram.
             </p>
           </div>
           <Image src={threeImage} alt="" />
+          <ButtonLink href="#shkarkolibrin" variant="solid" color="white">
+            Shkarko Recetën
+          </ButtonLink>
           </Container>
       </div>
+
     </section>
   )
 }

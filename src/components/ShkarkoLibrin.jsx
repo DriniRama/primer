@@ -54,22 +54,27 @@ export function ShkarkoLibrin() {
       className="scroll-mt-14 pt-6 sm:scroll-mt-32"
     >
       <Container>
-        <SectionHeading number="4" id="shkarko-librin">Libri</SectionHeading>
-        <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-          Shkarko guidën e personalizuar për humbjen e peshës
+        <p id="shkarko-librin">Çka përfshihet në këtë recetë?</p>
+        <p className="mt-8 font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
+          Kjo Recetë tregon mënyrën e saktë se si të humbni peshë shpejtë dhe lehtë.
+
         </p>
+        <div className="mt-5 text-lg font-normal text-slate-800">Këtu i gjeni detajet rreth: </div>
+        <li className="mt-5 text-xl font-normal text-slate-800"> Çfarë ushqime të hani</li>
+        <li className="mt-5 text-xl font-normal text-slate-800"> Çfarë ushqime të ndaloni</li>
       </Container>
       <div className="mx-auto mt-6 max-w-5xl lg:px-6">
-        <div className="grid bg-slate-50 sm:px-6 sm:pb-6 md:grid-cols-1 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">
-          <div className="relative bg-green-600 py-16 px-4 sm:rounded-5xl sm:py-12 sm:px-10 sm:shadow-lg lg:px-12">
-            <div className="relative flex flex-col">
-              <p className="mt-2 text-lg tracking-tight text-white">
-                Konfirmoni detajet dhe shkarkoni dokumentin
+          <div className="relative flex items-center justify-center bg-green-600 py-16 px-4 sm:rounded-5xl sm:py-12 sm:px-10 sm:shadow-lg lg:px-12">
+            <div className="relative  flex-col">
+              <p className="mt-2 text-4xl font-black uppercase tracking-tight text-white">
+               Shkarko recetën FALAS
+              </p>
+              <p className="mt-2 text-xl font-normal uppercase tracking-tight text-white">
+                duke plotësuar të dhënat më poshtë 👇
               </p>
             </div>
           </div>
         </div>
-      </div>
       <div className="isolate grid grid-cols-1 pb-10 px-6 sm:py-10 lg:px-8">
         <div className="w-full max-w-screen-lg mx-auto">
           <form

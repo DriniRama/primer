@@ -21,32 +21,32 @@ export function Hero() {
             <Image src={coverImage} alt="" priority />
           </div>
         </div>
-        <div className="relative px-4 sm:px-6 lg:col-span-7 lg:pr-0 lg:pb-14 lg:pl-16 xl:pl-20">
-          <div className="hidden lg:absolute lg:bottom-0 lg:-top-32 lg:right-[-100vw] lg:left-[-100vw] lg:block lg:bg-slate-100" />
-          <figure className="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">
-            <div className="flex justify-center text-yellow-600 lg:justify-start">
-              <StarRating />
-            </div>
-            <blockquote className="mt-2">
-              <p className="font-display text-xl font-medium text-slate-900">
-                “Një çaj i jashtëzakonshëm që mban me lehtësi shijen e këndshme me përfitimet e tij të fuqishme për humbjen e peshës, duke ofruar një mënyrë të freskët dhe efektive për të arritur qëllimet e mia të shëndetit.”
-              </p>
-            </blockquote>
+        {/*<div className="relative px-4 sm:px-6 lg:col-span-7 lg:pr-0 lg:pb-14 lg:pl-16 xl:pl-20">*/}
+        {/*  <div className="hidden lg:absolute lg:bottom-0 lg:-top-32 lg:right-[-100vw] lg:left-[-100vw] lg:block lg:bg-slate-100" />*/}
+        {/*  <figure className="relative mx-auto max-w-md text-center lg:mx-0 lg:text-left">*/}
+        {/*    <div className="flex justify-center text-yellow-600 lg:justify-start">*/}
+        {/*      <StarRating />*/}
+        {/*    </div>*/}
+        {/*    <blockquote className="mt-2">*/}
+        {/*      <p className="font-display text-xl font-medium text-slate-900">*/}
+        {/*        “Një çaj i jashtëzakonshëm që mban me lehtësi shijen e këndshme me përfitimet e tij të fuqishme për humbjen e peshës, duke ofruar një mënyrë të freskët dhe efektive për të arritur qëllimet e mia të shëndetit.”*/}
+        {/*      </p>*/}
+        {/*    </blockquote>*/}
 
-          </figure>
-        </div>
+        {/*  </figure>*/}
+        {/*</div>*/}
         <div className="bg-white pt-16 lg:col-span-7 lg:bg-transparent lg:pt-0 lg:pl-16 xl:pl-20">
           <div className="mx-auto px-4 sm:px-6 md:max-w-2xl md:px-4 lg:px-0">
             <h1 className="font-display text-5xl font-extrabold text-emerald-900 sm:text-6xl">
-              Përbërës 100% natyral      </h1>
+              Si të humbisni 5-8 kilogram për një javë?      </h1>
             <p className="mt-4 text-3xl text-zinc-700">
-              Produkti i prodhuar dhe paketuar në Zvicërr, një pije natyrale dhe e shëndetshme për humbjen e peshës.            </p>
-            <div className="mt-8 mb-10 flex">
+              Shkarkoni recetën falas dhe mësoni se si të humbisni 5-8kg brenda javës. </p>
+            <div className="mt-10 mb-12 flex">
               <ButtonLink className="mx-5" href="#shporta" variant="outline" color="green">
-                Porosit online
+                Porosite produktin
               </ButtonLink>
               <ButtonLink href="#shkarkolibrin" variant="outline" color="green">
-                Shkarko Librin
+                Shkarko Recetën
               </ButtonLink>
             </div>
           </div>
